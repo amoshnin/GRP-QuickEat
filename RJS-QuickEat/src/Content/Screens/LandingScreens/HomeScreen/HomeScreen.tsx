@@ -3,6 +3,7 @@ import React, { memo } from "react"
 import styled from "styled-components"
 
 // COMPONENTS IMPORTS //
+import { Button } from "Content/Shared/Components/Buttons"
 import { memoComparison } from "Content/Shared/Helpers/Functions/Functions"
 
 // EXTRA IMPORTS //
@@ -22,6 +23,10 @@ const HomeScreen: React.FC<PropsType> = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
             laborum omnis, eligendi numquam cupiditate neque officiis.
           </Description>
+          <Button
+            title={"Start using"}
+            subtitle={"Lorem upsum imso loim riem"}
+          />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
