@@ -19,9 +19,7 @@ const HomeScreen: React.FC<PropsType> = () => {
           <Title>Quick Eat</Title>
           <Description>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            laborum omnis, eligendi numquam cupiditate neque officiis. Delectus
-            deleniti eum ad vel officia, sapiente ullam? Ullam doloribus quaerat
-            aliquam maxime voluptas.
+            laborum omnis, eligendi numquam cupiditate neque officiis.
           </Description>
         </TextWrapper>
       </ContentWrapper>
