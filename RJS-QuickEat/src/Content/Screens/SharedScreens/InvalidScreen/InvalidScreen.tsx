@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 // COMPONENTS IMPORTS //
-import InvalidImage from "Assets/Images/illustrations/404.svg"
+import InvalidImage from "Assets/Images/Illustrations/404.svg"
 import { memoComparison } from "Content/Shared/Helpers/Functions/Functions"
 
 // EXTRA IMPORTS //

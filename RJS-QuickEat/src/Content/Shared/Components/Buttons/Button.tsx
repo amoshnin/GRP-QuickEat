@@ -7,6 +7,8 @@ import { memoComparison } from "Content/Shared/Helpers/Functions/Functions"
 import { Caption2, SmallText } from "Content/Shared/Styles/TextStyles"
 
 // EXTRA IMPORTS //
+import CreditImage from "Assets/Images/Icons/credit.svg"
+import RingImage from "Assets/Images/Icons/icon-ring.svg"
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -18,8 +20,14 @@ interface PropsType {
 const Button: React.FC<PropsType> = (props) => {
   return (
     <Wrapper>
-      <Title>{props.title}</Title>
-      <Subtitle>{props.subtitle}</Subtitle>
+      <IconWrapper>
+        <IconImg src={CreditImage} />
+        <RingImg src={RingImage} />
+      </IconWrapper>
+      <TextWrapper>
+        <Title>{props.title}</Title>
+        <Subtitle>{props.subtitle}</Subtitle>
+      </TextWrapper>
     </Wrapper>
   )
 }
@@ -28,10 +36,6 @@ const Button: React.FC<PropsType> = (props) => {
 
 const Wrapper = styled.div`
   max-width: 280px;
-  height: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 12px;
   background: linear-gradient(180deg, #ffffff 0%, #d9dfff 100%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
@@ -39,6 +43,15 @@ const Wrapper = styled.div`
     inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   border: 0px;
+  display: grid;
+  grid-template-columns: 53px auto;
+  align-items: center;
+  gap: 16px;
+`
+
+const TextWrapper = styled.div`
+  display: grid;
+  gap: 1px;
 `
 
 const Title = styled(Caption2)`
@@ -48,6 +61,31 @@ const Title = styled(Caption2)`
 const Subtitle = styled(SmallText)`
   color: black;
   opacity: 0.7;
+`
+
+const ICON_WRAP_SIZE = "45px"
+const IconWrapper = styled.div`
+  background: linear-gradient(200.44deg, #4316db 13.57%, #9076e7 98.38%);
+  height: ${ICON_WRAP_SIZE};
+  width: ${ICON_WRAP_SIZE};
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  position: relative;
+`
+
+const ICON_SIZE = "29px"
+const IconImg = styled.img`
+  height: ${ICON_SIZE};
+  width: ${ICON_SIZE};
+`
+
+const RingImg = styled.img`
+  position: absolute;
+  top: -15px;
+  left: -15px;
 `
 
 export default memo(Button, memoComparison)
