@@ -1,5 +1,6 @@
 // PLUGINS IMPORTS //
 import React, { memo } from "react"
+import styled from "styled-components"
 
 // COMPONENTS IMPORTS //
 import { memoComparison } from "Content/Shared/Helpers/Functions/Functions"
@@ -11,7 +12,13 @@ import { memoComparison } from "Content/Shared/Helpers/Functions/Functions"
 interface PropsType {}
 
 const LandingNavbar: React.FC<PropsType> = () => {
-  return <div>landing navbar</div>
+  return <Wrapper>landing navbar</Wrapper>
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+`
 
 export default memo(LandingNavbar, memoComparison)
