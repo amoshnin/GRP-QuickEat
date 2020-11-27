@@ -87,6 +87,10 @@ const IconWrapper = styled.div`
   align-content: center;
   justify-self: center;
   position: relative;
+
+  ${Wrapper}:hover & {
+    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
+  }
 `
 
 const ICON_SIZE = "29px"
