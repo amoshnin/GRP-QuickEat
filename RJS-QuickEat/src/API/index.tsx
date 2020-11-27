@@ -4,14 +4,14 @@ import "firebase/auth"
 import "firebase/storage"
 
 var FirebaseConfig = {
-  apiKey: "AIzaSyBQEffGziv8NpeKVex9-4hOvs8_apEzAEo",
-  authDomain: "myportfolio-dev.firebaseapp.com",
-  databaseURL: "https://myportfolio-dev.firebaseio.com",
-  projectId: "myportfolio-dev",
-  storageBucket: "myportfolio-dev.appspot.com",
-  messagingSenderId: "1056684797659",
-  appId: "1:1056684797659:web:71b3ff8bdf10da5b59e6fe",
-  measurementId: "G-BG88VXLJN9",
+  apiKey: "AIzaSyCZ6n1Q4pqjFY7vv7iPkErsz7umuYdHirE",
+  authDomain: "easy-service-dc8a5.firebaseapp.com",
+  databaseURL: "https://easy-service-dc8a5.firebaseio.com",
+  projectId: "easy-service-dc8a5",
+  storageBucket: "easy-service-dc8a5.appspot.com",
+  messagingSenderId: "404550704994",
+  appId: "1:404550704994:web:50be66126ec8d24d4ed63b",
+  measurementId: "G-S6W8Q0335H",
 }
 
 // Initialize Firebase
